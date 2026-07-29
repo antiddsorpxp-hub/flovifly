@@ -1,0 +1,8 @@
+{
+  "name":"viole-messenger","version":"2.0.0","private":true,
+  "description":"Viole realtime messenger PWA",
+  "main":"server.js",
+  "scripts":{"start":"node server.js","dev":"node --watch server.js","check":"node --check server.js && node --check public/app.js"},
+  "engines":{"node":">=20"},
+  "dependencies":{"express":"^4.21.2","socket.io":"^4.8.1"}
+}
