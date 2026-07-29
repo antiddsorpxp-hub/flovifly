@@ -1,7 +1,0 @@
-node_modules/
-.env
-data/*.json
-data/*.tmp
-!.gitkeep
-.DS_Store
-npm-debug.log*
