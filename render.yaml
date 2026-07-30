@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: flovifly
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    envVars:
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+      - key: SUPABASE_STORAGE_BUCKET
+        value: profile-media
+      - key: OWNER_USERNAME
+        value: flovifly
+      - key: OWNER_PASSWORD
+        sync: false
+      - key: PREMIUM_BETA_ENABLED
+        value: true
+      - key: SESSION_MAX_AGE_SECONDS
+        value: 604800
+      - key: SESSION_IDLE_SECONDS
+        value: 86400
+      - key: TURN_URL
+        sync: false
+      - key: TURN_SHARED_SECRET
+        sync: false
+      - key: TURN_TTL_SECONDS
+        value: 3600

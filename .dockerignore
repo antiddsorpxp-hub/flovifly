@@ -1,0 +1,16 @@
+.git
+.github
+.env
+.env.*
+!.env.example
+node_modules
+npm-debug.log*
+*.log
+data
+test
+tests
+coverage
+.DS_Store
+*.zip
+*.tar
+*.gz
